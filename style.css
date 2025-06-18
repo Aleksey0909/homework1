@@ -44,6 +44,7 @@ header span {
 
 .main-title {
   /* Стили для заголовка в первой секции */
+  margin-bottom: 20px;
   padding-top: 60px;
   font-family: Inter;
   font-weight: 700;
@@ -68,7 +69,7 @@ header span {
 
 .about-section {
   /* Стили для второй секции */
-  padding-top: 100px 0 px;
+  padding-top: 100px 0px;
 }
 
 select {
@@ -153,6 +154,7 @@ td {
 }
 
 footer {
+  padding: 26px 0px;
   background: #a3a7ff4d;
   height: 70px;
   /* Стили для футера */
@@ -162,7 +164,6 @@ footer {
   /* Стили для футера */
   font-size: 14px;
   padding-top: 25px;
-  display: flex;
   color: #2965f1;
   text-decoration: none;
 }
