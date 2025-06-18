@@ -69,7 +69,7 @@ header span {
 
 .about-section {
   /* Стили для второй секции */
-  padding-top: 100px 0px;
+  padding: 100px 0px;
 }
 
 select {
