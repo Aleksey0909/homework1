@@ -1,0 +1,165 @@
+* {
+  /* Свойства для сброса начальных стилей элементов */
+
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  font-family: "Inter", sans-serif;
+  color: #303030;
+}
+
+header {
+  padding-top: 23px;
+  padding-bottom: 23px;
+  background: #2965f1;
+
+  /* Стили для хедера */
+}
+
+header span {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  color: #ffffff;
+
+  /* Стили для текста в хедере IT-INCUBATOR */
+}
+
+.main-section {
+  /* Стили для первой секции */
+
+  background: #fafaff;
+}
+
+.main-title {
+  /* Стили для заголовка в первой секции */
+  padding-top: 60px;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 48px;
+  color: #303030;
+}
+.main-text {
+  /* Стили для текста в первой секции */
+  padding-top: 20px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  color: #303030;
+}
+
+.main-image {
+  /* Стили для изображения в первой секции */
+  background: #fafaff;
+}
+
+.about-section {
+  /* Стили для второй секции */
+  padding-top: 100px;
+}
+
+select {
+  /* Стили для выпадающего списка */
+
+  border-width: 1px;
+  border: 1px solid #3030304d;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.section-title {
+  /* Стили для заголовков во второй секции */
+
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 24px;
+  color: #303030;
+  margin-bottom: 30px;
+}
+
+.frameworks-list {
+  /* Стили для маркированного списка во второй секции */
+  padding-top: 25px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  color: #303030;
+}
+
+.books-list {
+  /* Стили для нумерованного списка во второй секции */
+  padding-top: 25px;
+  padding-left: 20px;
+}
+
+.label {
+  /* Стили для подписей чекбоксов */
+  gap: 4px;
+}
+
+.text-field {
+  /* Стили для односточного поля ввода текста */
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  height: 36px;
+  border-width: 1px;
+  border-radius: 5px;
+  border: 1px solid #3030304d;
+}
+
+.btn {
+  /* Стили для кнопки */
+  padding: 10px 25px 10px 30px;
+  border-radius: 5px;
+  background: #2965f1;
+  color: white;
+}
+
+.line {
+  /* Стили для линии */
+
+  border-width: 1px;
+  border: 1px solid #3030304d;
+  margin-top: 60px;
+}
+
+table {
+  margin-top: 60px;
+  border: 1px solid #95a1bb;
+  border-collapse: collapse;
+  /* Стили для таблицы */
+}
+
+th,
+td {
+  border: 1px solid #95a1bb;
+  padding: 10px 15px 10px 15px;
+
+  /* Стили для ячеек таблицы */
+}
+
+footer {
+  background: #a3a7ff4d;
+  height: 70px;
+  /* Стили для футера */
+}
+
+.footer-link {
+  /* Стили для футера */
+  padding-top: 25px;
+  display: flex;
+  color: #2965f1;
+  text-decoration: none;
+}
