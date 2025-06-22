@@ -1,169 +1,228 @@
 * {
-  /* Свойства для сброса начальных стилей элементов */
-
-  padding: 0px;
-  margin: 0px;
-  border: none;
-}
-
-*,
-*::before,
-*::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-body {
+.container {
+  /* чтобы контейнер был виден, в конце можно будет удалить это св-во */
+  margin: 0 auto;
+  width: 100%;
   max-width: 1440px;
+  padding: 0px 150px;
+
+  /* 📍 Максимальная ширина для контейнера */
+}
+
+body {
   font-family: "Inter", sans-serif;
   color: #303030;
 }
 
 header {
-  padding-top: 23px;
-  padding-bottom: 23px;
-  background: #2965f1;
-
-  /* Стили для хедера */
+  background-color: #2965f1;
+  padding: 23px 0;
 }
 
 header span {
-  font-family: Inter;
   font-weight: 700;
   font-size: 20px;
-  line-height: 100%;
-  color: #ffffff;
-
-  /* Стили для текста в хедере IT-INCUBATOR */
+  color: #fff;
 }
 
 .main-section {
-  /* Стили для первой секции */
-  background: #fafaff;
-  padding: 60px 0px;
+  background-color: #fafaff;
+  padding: 60px 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
+}
+
+.main-section .wrapper {
+  margin-top: 220px;
+  text-align: left;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  /* 📍 Свойствa flexbox для размещения блока с текстом и изображения в ряд, и центрирования их по вертикали */
+}
+
+.text-wrapper {
+  /* 📍 Cвойство для ограничения ширины блока с текстом в первой секции */
+  width: 100%;
+  max-width: 425px;
+  margin-left: 120 0px;
 }
 
 .main-title {
-  /* Стили для заголовка в первой секции */
-  margin-bottom: 20px;
-  padding-top: 60px;
-  font-family: Inter;
   font-weight: 700;
   font-size: 48px;
-  color: #303030;
-}
-.main-text {
-  /* Стили для текста в первой секции */
-  padding-top: 20px;
   margin-bottom: 20px;
-  font-family: Inter;
+}
+
+.main-text {
   font-weight: 400;
   font-size: 18px;
-  color: #303030;
 }
 
 .main-image {
-  /* Стили для изображения в первой секции */
-  background: #fafaff;
   max-width: 715px;
 }
 
 .about-section {
-  /* Стили для второй секции */
-  padding: 100px 0px;
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+.about-section .wrapper {
+  padding-top: 100px;
+  display: flex;
+  gap: 65px;
+  flex-direction: column;
+  /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
 }
 
 select {
-  /* Стили для выпадающего списка */
-  background-repeat: no-repeat;
-  border-width: 1px;
-  border: 1px solid #3030304d;
-  margin-top: 50px;
+  border: 1px solid #2965f1;
   border-radius: 5px;
+  width: 150px;
+  padding: 8px 12px;
+  font-weight: 400;
+  font-size: 16px;
+  appearance: none;
+  background-image: url("./ep_arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 12px top 50%;
+}
+
+select:hover,
+.text-field:hover {
+  /* 📍 Стили для выпадающего списка и текстового поля при наведении курсора */
+  border: 1px solid #2965f1 cursor;
+  cursor: pointer;
+}
+
+.info-wrapper {
+  /* 📍 Свойство flexbox для расположения 2-х списков в ряд */
+  display: flex;
 }
 
 .section-title {
-  /* Стили для заголовков во второй секции */
-
-  font-family: Inter;
   font-weight: 700;
   font-size: 24px;
-  color: #303030;
   margin-bottom: 25px;
 }
 
+.frameworks,
+.books {
+  min-width: 50%;
+}
+
+.frameworks-list,
+.books-list {
+  /* 📍 Свойства flexbox для отступов между элементами в списках */
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+}
+
 .frameworks-list {
-  /* Стили для маркированного списка во второй секции */
-  padding: 0px 20px;
-  font-family: Inter;
   font-weight: 400;
   font-size: 16px;
-  color: #303030;
+  list-style-image: url(./solar_map-arrow-up-bold.svg);
+  padding-left: 20px;
+}
+
+.skills-block {
+  /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.skills {
+  /* 📍 Свойства flexbox для расположения элементов с классом .label */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .books-list {
-  /* Стили для нумерованного списка во второй секции */
-  padding: 0px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 20px;
 }
 
 .label {
-  /* Стили для подписей чекбоксов */
-  gap: 4px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+form {
+  margin-bottom: 40px;
 }
 
 .text-field {
-  /* Стили для односточного поля ввода текста */
-  font-family: Inter;
+  border: 1px solid #2965f1;
+  border-radius: 5px;
+  max-width: 330px;
+  width: 100%;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 8px 12px;
   font-weight: 400;
   font-size: 16px;
-  height: 36px;
-  border-width: 1px;
-  border-radius: 5px;
-  border: 1px solid #3030304d;
 }
 
 .btn {
-  /* Стили для кнопки */
-  padding: 10px 25px 10px 30px;
+  border: none;
   border-radius: 5px;
-  background: #2965f1;
-  color: white;
+  width: 125px;
+  height: 36px;
+  background-color: #2965f1;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+
+.btn:hover {
+  /* 📍 Стили для кнопки при наведении курсора */
+  background-color: #2965f1;
+  cursor: pointer;
 }
 
 .line {
-  /* Стили для линии */
-
-  border-width: 1px;
-  border: 1px solid #3030304d;
-  margin: 60px 0px;
+  margin: 60px 0;
 }
 
 table {
-  font-size: 14px;
-  margin-top: 60px;
   border: 1px solid #95a1bb;
   border-collapse: collapse;
-  /* Стили для таблицы */
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0 auto;
 }
 
 th,
 td {
-  border: 1px solid #95a1bb;
-  padding: 12px 15px 12px 15px;
-
-  /* Стили для ячеек таблицы */
+  padding: 12px 15px;
 }
 
 footer {
-  padding: 26px 0px;
-  background: #a3a7ff4d;
-  height: 70px;
-  /* Стили для футера */
+  background-color: rgba(163, 167, 255, 0.3);
+  padding: 26px 0;
+  /* 📍 Свойство для расположения ссылки горизонтально по центру */
+  text-align: center;
 }
 
 .footer-link {
-  /* Стили для футера */
+  font-weight: 400;
   font-size: 14px;
-  padding-top: 25px;
   color: #2965f1;
   text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  /* 📍 Стили для ссылки при наведении курсора */
 }
